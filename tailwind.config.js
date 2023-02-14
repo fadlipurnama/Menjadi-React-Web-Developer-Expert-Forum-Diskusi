@@ -6,7 +6,11 @@ module.exports = {
       center: true,
       padding: '16px',
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter'],
+      },
+    },
   },
   plugins: [],
 };
