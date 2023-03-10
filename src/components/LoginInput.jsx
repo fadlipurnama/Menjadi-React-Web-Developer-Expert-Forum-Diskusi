@@ -17,7 +17,7 @@ function LoginInput({ login }) {
           value={email}
           onChange={onEmailChange}
           className='w-full rounded-lg border border-slate-600 p-2 text-base font-normal outline-slate-900'
-          placeholder='Masukan Email'
+          placeholder='Masukkan Email'
         />
       </label>
       <label className='flex flex-col gap-2 text-lg font-semibold lg:text-xl'>
@@ -27,7 +27,7 @@ function LoginInput({ login }) {
           value={password}
           onChange={onPasswordChange}
           className='w-full rounded-lg border border-slate-600 p-2 text-base font-normal outline-slate-900'
-          placeholder='Masukan Kata Sandi'
+          placeholder='Masukkan Kata Sandi'
         />
       </label>
       <button

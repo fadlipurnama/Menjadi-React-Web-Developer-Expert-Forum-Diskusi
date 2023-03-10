@@ -217,14 +217,14 @@ const api = (() => {
     return comment;
   }
 
-  async function toggleLikeThread(threadId) {
+  async function toggleLikeThread({ threadId, userId }) {
     const response = await _fetchWithAuth(`${BASE_URL}/threads/${threadId}/up-vote`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        threadId,
+        userId,
       }),
     });
 

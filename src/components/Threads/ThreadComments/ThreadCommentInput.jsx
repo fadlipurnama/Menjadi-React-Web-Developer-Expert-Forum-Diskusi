@@ -15,7 +15,9 @@ function ThreadCommentInput({ addCommentThread }) {
       ></textarea>
       <button
         className='w-full rounded-md bg-slate-700 py-1 text-sm text-white hover:bg-slate-600 active:bg-slate-500 md:text-base'
-        onClick={() => addCommentThread({ content })}
+        onClick={() => {
+          addCommentThread({ content });
+        }}
       >
         Kirim
       </button>

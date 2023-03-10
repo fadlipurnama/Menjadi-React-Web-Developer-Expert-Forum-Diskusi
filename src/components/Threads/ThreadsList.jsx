@@ -14,7 +14,6 @@ function ThreadsList({ threads }) {
 
 ThreadsList.propTypes = {
   threads: PropTypes.arrayOf(PropTypes.shape(threadItemShape)).isRequired,
-  like: PropTypes.func.isRequired,
 };
 
 export default ThreadsList;

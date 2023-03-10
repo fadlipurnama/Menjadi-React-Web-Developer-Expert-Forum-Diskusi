@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import LeaderboardsList from '../components/LeaderboardsList';
 import { asyncReceiveLeaderboards } from '../states/leaderboards/action';

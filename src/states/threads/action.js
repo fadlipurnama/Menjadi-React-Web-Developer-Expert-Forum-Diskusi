@@ -48,13 +48,13 @@ function asyncAddThread({ title, body, category }) {
   };
 }
 
-function asyncToogleLikeThread(threadId) {
+function asyncToogleLikeThread({ threadId, userId }) {
   return async (dispatch, getState) => {
     const { authUser } = getState();
     dispatch(toggleLikeThreadActionCreator({ threadId, userId: authUser.id }));
 
     try {
-      await api.toggleLikeThread(threadId);
+      await api.toggleLikeThread({ threadId, userId });
     } catch (error) {
       alert(error.message);
       dispatch(toggleLikeThreadActionCreator({ threadId, userId: authUser.id }));

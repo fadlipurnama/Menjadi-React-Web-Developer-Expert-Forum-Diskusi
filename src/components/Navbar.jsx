@@ -8,7 +8,7 @@ function Navbar({ authUser, signOut }) {
   const [menu, setMenu] = useState(false);
 
   return (
-    <header className='sticky top-0 bg-slate-700'>
+    <header className='sticky top-0 z-40 bg-slate-700'>
       <div className='container'>
         <div className='flex items-center justify-between'>
           <div className='block py-6 text-xl font-bold text-slate-200 lg:text-2xl'>
@@ -25,7 +25,7 @@ function Navbar({ authUser, signOut }) {
             }}
             className='flex h-10 cursor-pointer items-center gap-4 md:h-11 lg:h-12'
           >
-            <div className=' text-slate-200 lg:text-2xl'>
+            <div className='text-slate-200 lg:text-2xl'>
               <h1>{authUser.name}</h1>
             </div>
             <img
@@ -42,7 +42,7 @@ function Navbar({ authUser, signOut }) {
           onMouseLeave={() => {
             setMenu(false);
           }}
-          className={`top-14 right-12 w-full max-w-[200px] rounded-lg bg-white shadow-lg lg:top-16 lg:right-24 
+          className={`top-14 right-12 w-full max-w-[200px] rounded-lg z-50 bg-white shadow-lg lg:top-16 lg:right-24 
           ${menu ? 'absolute ' : 'hidden'}`}
         >
           <ul>

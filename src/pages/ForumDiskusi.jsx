@@ -8,9 +8,6 @@ import { asyncToogleLikeThread } from '../states/threads/action';
 
 function ForumDiskusi() {
   const { threads = [], users = [], authUser } = useSelector((states) => states);
-
-  console.log(authUser);
-
   const dispatch = useDispatch();
 
   useEffect(() => {
