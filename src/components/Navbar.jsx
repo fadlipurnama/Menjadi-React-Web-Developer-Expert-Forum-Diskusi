@@ -13,7 +13,7 @@ function Navbar({ authUser, signOut }) {
         <div className='flex items-center justify-between'>
           <div className='block py-6 text-xl font-bold text-slate-200 lg:text-2xl'>
             <Link to='/'>
-              <h1>Forum Diskusi</h1>
+              <h1>Forum Diskusi App</h1>
             </Link>
           </div>
           <div
