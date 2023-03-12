@@ -42,7 +42,7 @@ function Navbar({ authUser, signOut }) {
           onMouseLeave={() => {
             setMenu(false);
           }}
-          className={`top-14 right-12 w-full max-w-[200px] rounded-lg z-50 bg-white shadow-lg lg:top-16 lg:right-24 
+          className={`top-14 right-12 z-50 w-full max-w-[200px] rounded-lg bg-white shadow-lg lg:top-16 lg:right-24  
           ${menu ? 'absolute ' : 'hidden'}`}
         >
           <ul>
