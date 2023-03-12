@@ -18,7 +18,7 @@ function RegisterInput({ register }) {
           value={name}
           onChange={onNameChange}
           className='w-full rounded-lg border border-slate-600 p-2 text-base font-normal outline-slate-900'
-          placeholder='Masukan Username'
+          placeholder='Masukkan Username'
         />
       </label>
       <label htmlFor='email' className='flex flex-col gap-2 text-lg font-semibold lg:text-xl'>
@@ -28,7 +28,7 @@ function RegisterInput({ register }) {
           value={email}
           onChange={onEmailChange}
           className='w-full rounded-lg border border-slate-600 p-2 text-base font-normal outline-slate-900'
-          placeholder='Masukan Email'
+          placeholder='Masukkan Email'
         />
       </label>
       <label htmlFor='password' className='flex flex-col gap-2 text-lg font-semibold lg:text-xl'>
@@ -38,7 +38,7 @@ function RegisterInput({ register }) {
           value={password}
           onChange={onPasswordChange}
           className='w-full rounded-lg border border-slate-600 p-2 text-base font-normal outline-slate-900'
-          placeholder='Masukan Kata Sandi'
+          placeholder='Masukkan Kata Sandi'
         />
       </label>
       <button
