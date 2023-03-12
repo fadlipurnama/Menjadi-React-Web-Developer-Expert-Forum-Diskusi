@@ -6,21 +6,13 @@
     // "jest": true,
     "cypress/globals": true
   },
-  "extends": [
-    "plugin:react/recommended",
-    "plugin:tailwindcss/recommended",
-    "standard"
-  ],
+  "extends": ["plugin:react/recommended", "plugin:tailwindcss/recommended", "standard"],
   "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "jest",
-    "cypress"
-  ],
+  "plugins": ["react", "jest", "cypress"],
   "rules": {
     "no-console": "off",
     "linebreak-style": "off",

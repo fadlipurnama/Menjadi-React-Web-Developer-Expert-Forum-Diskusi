@@ -2,7 +2,7 @@
  * test scenario for LoginInput component
  *
  * - LoginInput component
- *   - sshould handle email typing correctly
+ *   - should handle email typing correctly
  *   - should handle password typing correctly
  *   - should call login function when login button is clicked
  */

@@ -77,8 +77,10 @@ describe('Login spec', () => {
       .click();
 
     // memverifikasi bahwa elemen yang berada di homepage ditampilkan
-    cy.get('header').contains(/^Forum Diskusi App$/).should('be.visible');
-    cy.get('nav').invoke('show')
+    cy.get('header')
+      .contains(/^Forum Diskusi App$/)
+      .should('be.visible');
+    cy.get('nav').invoke('show');
     cy.get('button').contains('Logout').click();
   });
 });
